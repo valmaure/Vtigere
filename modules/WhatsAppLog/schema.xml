@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<schema>
+	<tables>
+		<table>
+			<name>vtiger_whatsapplog</name>
+			<sql><![CDATA[CREATE TABLE `vtiger_whatsapplog` (
+  `whatsapplogid` int(19) NOT NULL,
+  `whatsapplog_no` varchar(100) DEFAULT NULL,
+  `whatsapplog_sendername` varchar(100) DEFAULT NULL,
+  `whatsapplog_chatid` varchar(100) DEFAULT NULL,
+  `messagelog_type` varchar(100) DEFAULT NULL,
+  `messagelog_body` varchar(100) DEFAULT NULL,
+  `whatsapplog_quotemessage` varchar(100) DEFAULT NULL,
+  `whatsapplog_contactid` varchar(100) DEFAULT NULL,
+  `whatsapplog_unreadread` varchar(255) DEFAULT NULL,
+  `whatsapplog_withoccode` varchar(255) DEFAULT NULL,
+  `whatsapplog_withccode` varchar(255) DEFAULT NULL,
+  `whatsapplog_datetime` datetime DEFAULT NULL,
+  `whatsapplog_msgid` varchar(255) DEFAULT NULL,
+  `whatsapplog_your_number` varchar(255) DEFAULT NULL,
+  `whatsapplog_important` varchar(255) DEFAULT NULL,
+  `whatsapplog_response` varchar(100) DEFAULT NULL,
+  `whatsapplog_request` varchar(100) DEFAULT NULL,
+  `whatsapplog_botid` varchar(255) DEFAULT NULL,
+  `whatsapplog_displayname` varchar(255) DEFAULT NULL,
+  `whatsapp_numberactive` varchar(3) DEFAULT NULL,
+  PRIMARY KEY (`whatsapplogid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+		</table>
+		<table>
+			<name>vtiger_whatsapplogcf</name>
+			<sql><![CDATA[CREATE TABLE `vtiger_whatsapplogcf` (
+  `whatsapplogid` int(19) NOT NULL,
+  PRIMARY KEY (`whatsapplogid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+		</table>
+	</tables>
+</schema>
